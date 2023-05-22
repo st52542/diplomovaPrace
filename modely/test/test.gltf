@@ -127,7 +127,7 @@
         {
             "mimeType" : "image/jpeg",
             "name" : "test",
-            "uri" : "test.jpg/test.jpg"
+            "uri" : "test.jpeg/test.jpeg"
         }
     ],
     "accessors" : [
