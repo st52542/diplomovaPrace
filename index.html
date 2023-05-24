@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <title>Diplomová práce úvod</title>
@@ -7,18 +7,13 @@
     <script>
         $(function(){
             $("#includeMenu").load("menu.html");
+            $("#includeFooter").load("footer.html");
         });
     </script>
     <link rel="stylesheet" href="myCSS.css">
 </head>
 <body>
 <div id="includeMenu"></div>
-<div class="menu">
-    <a href="index.html">Úvod</a><br>
-    <a href="isSupported.html">Kontrola podpory zařízení</a><br>
-    <a href="galerie.html">Galerie</a><br>
-    <a href="contact.html">Kontakt</a><br>
-</div>
 <h1>
     Návrh a realizace mobilní aplikace využívající rozšířené reality
 </h1>
@@ -26,4 +21,7 @@
 <p>Diplomová práce je vypracována v&nbsp;rámci Fakulty eletrotechniky a&nbsp;informatiky Univerzity Pardubice.</p>
 <p>Webové stránky obsahují aplikaci využívající rozšířenou realitu.</p>
 </body>
+<footer>
+    <div id="includeFooter"></div>
+</footer>
 </html>

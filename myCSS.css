@@ -15,3 +15,10 @@ div.menu a {
 div.menu a:hover {
     background-color: #777;
 }
+
+.footer{
+    text-align: center;
+    background: #DCDCDC;
+    overflow: hidden;
+    vertical-align: middle;
+}
