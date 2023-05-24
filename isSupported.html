@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diplomová práce úvod</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includeMenu").load("menu.html");
+        });
+    </script>
+</head>
+<body>
+<div id="includeMenu"></div>
+<p><b>Does my browser support WebXR?vvv</b><br/>
+<div>
+    <img id='canhazimg' style='width: 32px; float: left;'></img>
+    <p id='canhazwebxr' style='margin-left: 48px;'></p>
+</div>
+<script>
+
+
+    let canhazElement = document.getElementById('canhazwebxr');
+    let canhazImg = document.getElementById('canhazimg');
+    if ('xr' in navigator) {
+        canhazElement.innerText = "Your browser implements the WebXR API and may be able to run Virtual Reality or Augmented Reality experiences if you are using a supported OS and the appropriate hardware."
+        navigator.xr.isSessionSupported('immersive-vr').then((supported) => {
+            const span = document.createElement('span');
+            span.innerText = supported ? '✔️- VR support detected' : '❌ - VR support not detected';
+            canhazElement.appendChild(document.createElement('br'));
+            canhazElement.appendChild(span);
+        });
+        navigator.xr.isSessionSupported('immersive-ar').then((supported) => {
+            const span = document.createElement('span');
+            span.innerText = supported ? '✔️- AR support detected' : '❌ - AR support not detected';
+            canhazElement.appendChild(document.createElement('br'));
+            canhazElement.appendChild(span);
+        });
+        canhazImg.src = "media/textures/check-button.png";
+    } else if ('getVRDisplays' in navigator) {
+        canhazElement.innerText = "Your browser does not support WebXR, but does support the deprecated WebVR API. You may be able to run Virtual Reality experiences on sites that use the WebXR Polyfill, like this one!"
+        canhazImg.src = "media/textures/info-button.png";
+    } else {
+        canhazElement.innerText = "Sorry, your browser does not support WebXR."
+        canhazImg.src = "media/textures/x-button.png";
+    }
+
+</script>
+<a href="putItems.html">zde</a>
+<a href="putItemsTestModel.html">zde nefunguje</a>
+<a href="putItemsTestModelNext.html">zde dalsi</a>
+</body>
+</html>
