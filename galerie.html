@@ -2,7 +2,7 @@
 <html lang="cz">
 <head>
     <meta charset="UTF-8">
-    <title>Diplomová práce úvod</title>
+    <title>Diplomová práce Galerie</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $(function(){
@@ -17,7 +17,34 @@
 <a href="putItems.html">zde</a>
 <a href="putItemsTestModel.html">zde nefunguje</a>
 <a href="putItemsTestModelNext.html">zde dalsi</a>
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+        <img src="modely/test2/test.png" alt="model1" style="width:100%" onclick="myFunction('sunflower');">
+    </div>
+    <div class="column">
+        <img src="modely/test/test.jpeg/test.jpeg" alt="model2" style="width:100%" onclick="myFunction('test');">
+    </div>
+    <div class="column">
+        <img src="modely/test2/test.png" alt="model3" style="width:100%" onclick="myFunction(this);">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:50%">
+</div>
+
+<script>
+    function myFunction(model) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = window.location.replace('putItems.html?model='+ model);
+    }
+</script>
 </body>
+
+
 <footer>
     <div id="includeFooter"></div>
 </footer>

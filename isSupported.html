@@ -2,7 +2,7 @@
 <html lang="cz">
 <head>
     <meta charset="UTF-8">
-    <title>Diplomová práce úvod</title>
+    <title>Diplomová práce kontrola zařízení</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $(function(){
@@ -15,6 +15,10 @@
 <body>
 <div id="includeMenu"></div>
 <p><b>Podporuje můj prohlíže WebXR?</b><br/>
+<div>
+    <img id='canhazimg' style='width: 32px; float: left;'></img>
+    <p id='canhazwebxr' style='margin-left: 48px;'></p>
+</div>
 <script>
     let canhazElement = document.getElementById('canhazwebxr');
     let canhazImg = document.getElementById('canhazimg');
