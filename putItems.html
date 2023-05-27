@@ -1,22 +1,24 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="cz">
 <head>
-    <meta charset='utf-8'>
+    <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
-
-    <title>Hit Test</title>
+    <title>Diplomová práce Vložení modelu</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#includeMenu").load("menu.html");
+            $("#includeFooter").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="myCSS.css">
 </head>
 <body>
+<div id="includeMenu"></div>
 <header>
-    <details open>
-        <summary>Hit Test</summary>
-        <p>
-            This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
-            <a class="back" href="./">Back</a>
-        </p>
-    </details>
+    <p>Zde můžete zapnout rozšířenou realitu a vložit model, který jste si vybrali</p>
 </header>
 <script type="module">
     import {WebXRButton} from './util/webxr-button.js';
@@ -44,8 +46,8 @@
     arObject.visible = false;
     scene.addNode(arObject);
 
-    let flower = new Gltf2Node({url: 'modely/'+ model+'/'+model+'.gltf'});
-    arObject.addNode(flower);
+    let itemToPut = new Gltf2Node({url: 'modely/'+ model+'/'+model+'.gltf'});
+    arObject.addNode(itemToPut);
 
     let reticle = new Gltf2Node({url: 'modely/reticle/reticle.gltf'});
     reticle.visible = false;
@@ -118,10 +120,10 @@
     // Adds a new object to the scene at the
     // specified transform.
     function addARObjectAt(matrix) {
-        let newFlower = arObject.clone();
-        newFlower.visible = true;
-        newFlower.matrix = matrix;
-        scene.addNode(newFlower);
+        let newItemToPut = arObject.clone();
+        newItemToPut.visible = true;
+        newItemToPut.matrix = matrix;
+        scene.addNode(newItemToPut);
     }
 
     function onSelect(event) {
@@ -164,4 +166,7 @@
     initXR();
 </script>
 </body>
+<footer>
+    <div id="includeFooter"></div>
+</footer>
 </html>

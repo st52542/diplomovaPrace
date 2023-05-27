@@ -14,9 +14,6 @@
 </head>
 <body>
 <div id="includeMenu"></div>
-<a href="putItems.html">zde</a>
-<a href="putItemsTestModel.html">zde nefunguje</a>
-<a href="putItemsTestModelNext.html">zde dalsi</a>
 
 <!-- The four columns -->
 <div class="row">
@@ -26,20 +23,16 @@
     <div class="column">
         <img src="modely/test/test.jpeg/test.jpeg" alt="model2" style="width:100%" onclick="myFunction('test');">
     </div>
-    <div class="column">
-        <img src="modely/test2/test.png" alt="model3" style="width:100%" onclick="myFunction(this);">
-    </div>
 </div>
 
 <div class="container">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" style="width:50%">
+    <img id="redirectToPage" style="width:50%">
 </div>
 
 <script>
     function myFunction(model) {
-        var expandImg = document.getElementById("expandedImg");
-        expandImg.src = window.location.replace('putItems.html?model='+ model);
+        const redirectPage = document.getElementById("redirectToPage");
+        redirectPage.src = window.location.replace('putItems.html?model='+ model);
     }
 </script>
 </body>
