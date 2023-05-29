@@ -90,19 +90,13 @@
     ],
     "materials" : [
         {
-            "emissiveFactor" : [
-                0,
-                0,
-                0
-            ],
-            "name" : "None",
+            "name" : "Materi\u00e1l.002",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
-                    "index" : 0,
-                    "texCoord" : 0
+                    "index" : 0
                 },
                 "metallicFactor" : 0,
-                "roughnessFactor" : 1
+                "roughnessFactor" : 0.5
             }
         }
     ],
@@ -131,8 +125,8 @@
     "images" : [
         {
             "mimeType" : "image/jpeg",
-            "name" : "test.jpeg",
-            "uri" : "test.jpeg/test_jpeg.jpg"
+            "name" : "test.jpeg.001",
+            "uri" : "test.jpeg/test.jpeg"
         }
     ],
     "accessors" : [
