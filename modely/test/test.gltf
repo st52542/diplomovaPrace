@@ -91,7 +91,7 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Materi\u00e1l",
+            "name" : "Materi\u00e1l.002",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0
@@ -126,7 +126,7 @@
     "images" : [
         {
             "mimeType" : "image/jpeg",
-            "name" : "test",
+            "name" : "test.jpeg.001",
             "uri" : "test.jpeg/test.jpeg"
         }
     ],
