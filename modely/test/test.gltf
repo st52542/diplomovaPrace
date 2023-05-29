@@ -90,13 +90,19 @@
     ],
     "materials" : [
         {
-            "name" : "Materi\u00e1l.002",
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "None",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
-                    "index" : 0
+                    "index" : 0,
+                    "texCoord" : 0
                 },
                 "metallicFactor" : 0,
-                "roughnessFactor" : 0.5
+                "roughnessFactor" : 1
             }
         }
     ],
