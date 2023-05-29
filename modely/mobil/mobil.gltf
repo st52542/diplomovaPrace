@@ -18,6 +18,20 @@
     ],
     "nodes" : [
         {
+            "mesh" : 0,
+            "name" : "Mesh_0",
+            "scale" : [
+                0.5974766612052917,
+                0.5974766612052917,
+                0.5974766612052917
+            ],
+            "translation" : [
+                0.03826580196619034,
+                0.012698296457529068,
+                -0.18439644575119019
+            ]
+        },
+        {
             "name" : "Camera.001",
             "rotation" : [
                 0.483536034822464,
@@ -72,20 +86,6 @@
                 4.958309173583984,
                 6.925790786743164
             ]
-        },
-        {
-            "mesh" : 0,
-            "name" : "testObject",
-            "scale" : [
-                0.017202019691467285,
-                0.017202019691467285,
-                0.017202019691467285
-            ],
-            "translation" : [
-                0,
-                0.42480435967445374,
-                0
-            ]
         }
     ],
     "materials" : [
@@ -93,9 +93,6 @@
             "doubleSided" : true,
             "name" : "Materi\u00e1l",
             "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 0
-                },
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.5
             }
@@ -117,86 +114,67 @@
             ]
         }
     ],
-    "textures" : [
-        {
-            "sampler" : 0,
-            "source" : 0
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/jpeg",
-            "name" : "test",
-            "uri" : "test.jpeg/test.jpeg"
-        }
-    ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 1326,
+            "count" : 91466,
             "max" : [
-                15.275471687316895,
-                5.503505229949951,
-                15.668310165405273
+                0.24307073652744293,
+                0.9910194277763367,
+                0.5534385442733765
             ],
             "min" : [
-                -15.275471687316895,
-                -24.496492385864258,
-                -15.668310165405273
+                -0.21072395145893097,
+                -0.02085726335644722,
+                -0.10199816524982452
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 1326,
+            "count" : 91466,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 1326,
+            "count" : 91466,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
-            "componentType" : 5123,
-            "count" : 1326,
+            "componentType" : 5125,
+            "count" : 91560,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 15912,
+            "byteLength" : 1097592,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 15912,
-            "byteOffset" : 15912
+            "byteLength" : 1097592,
+            "byteOffset" : 1097592
         },
         {
             "buffer" : 0,
-            "byteLength" : 10608,
-            "byteOffset" : 31824
+            "byteLength" : 731728,
+            "byteOffset" : 2195184
         },
         {
             "buffer" : 0,
-            "byteLength" : 2652,
-            "byteOffset" : 42432
-        }
-    ],
-    "samplers" : [
-        {
-            "magFilter" : 9729,
-            "minFilter" : 9987
+            "byteLength" : 366240,
+            "byteOffset" : 2926912
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 45084,
+            "byteLength" : 3293152,
             "uri" : "mobil.bin"
         }
     ]
