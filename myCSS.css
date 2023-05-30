@@ -1,5 +1,5 @@
 div.menu {
-    background-color: #333;
+    background-color: #393434;
     overflow: auto;
     white-space: nowrap;
 }
@@ -8,50 +8,47 @@ div.menu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-div.menu a:hover {
-    background-color: #777;
+    vertical-align: middle;
+    padding: 10px;
 }
 
 .footer{
     text-align: center;
-    background: #DCDCDC;
+    background: #393434;
     overflow: hidden;
     vertical-align: middle;
 }
 
 
-
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-    padding: 10px;
+.footer p{
+    color: white;
 }
 
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8;
+
+
+.polozka {
+    float: left;
+    width: 20%;
+    padding: 12px;
+}
+
+.polozka img {
+    opacity: 0.9;
     cursor: pointer;
 }
 
-.column img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
+.radek:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* The expanding image container */
-.container {
+.obrazek {
     position: relative;
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .polozka {width: 16.66%;}
+    .obrazek {width: 25%;}
 }
