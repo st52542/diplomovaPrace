@@ -118,63 +118,63 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 456,
+            "count" : 9153,
             "max" : [
-                0.22573497891426086,
-                0.9874986410140991,
-                0.547075092792511
+                0.242966428399086,
+                0.9906616806983948,
+                0.5534080862998962
             ],
             "min" : [
-                -0.1990537792444229,
-                -0.016505226492881775,
-                -0.09476465731859207
+                -0.21069884300231934,
+                -0.02085726335644722,
+                -0.10248571634292603
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 456,
+            "count" : 9153,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 456,
+            "count" : 9153,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 456,
+            "count" : 9153,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 5472,
+            "byteLength" : 109836,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 5472,
-            "byteOffset" : 5472
+            "byteLength" : 109836,
+            "byteOffset" : 109836
         },
         {
             "buffer" : 0,
-            "byteLength" : 3648,
-            "byteOffset" : 10944
+            "byteLength" : 73224,
+            "byteOffset" : 219672
         },
         {
             "buffer" : 0,
-            "byteLength" : 912,
-            "byteOffset" : 14592
+            "byteLength" : 18306,
+            "byteOffset" : 292896
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 15504,
+            "byteLength" : 311204,
             "uri" : "mobil.bin"
         }
     ]
